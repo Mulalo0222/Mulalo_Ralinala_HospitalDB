@@ -1,0 +1,8 @@
+CREATE TABLE Room (
+  Number INTEGER PRIMARY KEY NOT NULL,
+  [Type] TEXT NOT NULL,
+  BlockFloor INTEGER NOT NULL,
+  BlockCode INTEGER NOT NULL,
+  Unavailable BIT NOT NULL,
+  FOREIGN KEY(BlockFloor, BlockCode) REFERENCES [Block]
+);

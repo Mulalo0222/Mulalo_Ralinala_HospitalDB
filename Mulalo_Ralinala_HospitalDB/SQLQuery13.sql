@@ -1,0 +1,5 @@
+CREATE TABLE Block (
+  [Floor] INTEGER NOT NULL,
+  Code INTEGER NOT NULL,
+  PRIMARY KEY([Floor], Code)
+); 
